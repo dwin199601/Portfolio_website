@@ -1,0 +1,341 @@
+@charset "utf-8";
+
+/*BASE LAYOUT*/
+body{
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body nav{
+    font-family: 'Chango', cursive;
+}
+
+
+
+
+p#introId{
+ width: 200px;
+}
+div.intro{
+    text-align: center;
+    margin-top: 10px;
+}
+
+div.intro p{
+   display: block;
+   margin: 0 auto;
+}
+h1{
+    font-size: 2em;
+}
+hr{
+    width: 100%;
+    background-color: black;
+}
+nav.navBar ul li{
+    list-style: none;
+   
+}
+nav.navBar ul li p{
+    font-weight: bold;
+}
+
+nav.navBar ul li p:hover{
+    color: turquoise;
+}
+div.topcontainer{
+    background-color: rgb(242, 243, 231);
+    color: rgb(14, 2, 2);
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+
+
+article#mainContent{
+    
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+}
+
+div.MainImg{
+display: flex;
+flex-flow: row wrap; 
+width: 100%;
+justify-content: center;
+}
+
+div.MainImg img{
+    
+width: 80%;
+
+max-width: 300px;
+    
+}
+
+div.intro img{
+width: 100%;
+border-radius: 5px;
+max-width: 300px;
+}
+h3{
+    width: 100%;
+}
+
+footer{
+    background-color: rgb(22, 7, 78);
+    width: 100%;
+    color:wheat;
+    border-radius: 5px;
+    padding: 2px;
+   
+}
+footer div#FootEr{
+    display: flex;
+    flex-flow: row wrap;
+}
+div.footerElement{
+    flex: 1 1 100px;
+}
+
+div.footerElement ul li {
+    display: none;
+}
+
+
+
+
+@media screen and (min-width: 728px){
+
+    header {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    div.topcontainer{
+        width: 100%;
+        background-color: rgb(242, 243, 231);
+        color: rgb(14, 2, 2);
+        
+    }
+
+   div.intro{
+       width: 100%;
+       display: flex ;
+       flex-direction: row-reverse;
+   }
+
+   div.intro img {
+   flex:1 1 328px;
+   margin-bottom: 10px;
+   
+
+   }
+
+   div.intro p{
+   flex:1 1 400px;
+   text-align: left;
+   
+   }
+
+   nav.navBar{
+       width: 100%;
+       display: flex;
+       flex-flow: row wrap;
+       margin: 0 auto;
+       justify-content: center
+
+       
+   }
+   nav.navBar ul li{
+       display: block;
+       list-style: none;
+       float: left;
+       padding: 1em;
+       margin: 0.5em;
+
+       
+   }
+   nav.navBar ul li p{
+       font-size: 20px;
+       font-weight: bold;
+   }
+
+   div.intro{
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: center;
+    padding-right: 50px;
+    
+    
+   }
+   div.intro p{
+       padding-right: 10px;
+   }
+   section#mainsection{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    
+    
+   }
+
+   article#mainContent{
+    
+    width: 100%;
+    
+   }
+   div.MainImg{
+       width: 345px;
+       padding: 2px;
+       
+
+   }
+
+   article#mainContent{
+       display: block;
+       margin: 0 auto;
+       width: 700px;
+   }
+
+   footer h4.BackToTop{
+    display: none;
+}
+/*div.footerElement h4{
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 10px;
+}*/
+
+/*NAVIGATION IN FOOTER*/
+footer div#FootEr{
+    display: flex;
+    flex-flow: row nowrap;
+    border-width: 2px;
+   
+}
+
+
+
+footer div.footerElement nav ul li{
+    display: block;
+    list-style: none;
+    float: left;
+    padding-right: 10px;
+    font-weight: bold;
+   
+
+}
+
+
+}
+
+@media screen and (min-width: 1024px){
+
+    body{
+        max-width: 1200px;
+        display: block;
+        margin: 0 auto;
+        
+      }
+
+     
+    article#mainContent{
+        display: block;
+        margin: 0 auto;
+        width: 1200px;
+       
+        
+    }
+    section#mainsection{
+       
+        width: 1200px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        
+        
+    }
+    div.MainImg{
+        padding: 10px;
+       
+    }
+
+    header {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    div.topcontainer{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    
+    background-color: rgb(242, 243, 231);
+    color: rgb(14, 2, 2);
+
+    }
+    div.NavAlign{
+        flex: 1 1 100px;
+        width: 100%;
+    }
+
+    nav.navBar ul li p{
+        font-size: 20px;
+        font-weight: bold;
+
+    }
+    
+    div.NavAlign h1{
+        padding-top: 25px;
+        text-align: left;
+        padding-left: 5px;
+    }
+    footer h4.BackToTop{
+        display: none;
+    }
+
+    div.footerElement h4{
+        text-align: left;
+        padding-left: 10px;
+    }
+     
+
+    div.intro{
+       
+        display: flex;
+        flex-flow: row nowrap;
+        padding-top: 10px;
+        
+        padding-left: 10px;
+        
+       }
+       div.intro img {
+        flex: 1;
+        order: 2;
+       }
+       
+
+
+      
+        p#introId{
+           font-size: 20px;
+           flex:1;
+           order: 1;
+           text-align: left;
+           
+       }
+       
+
+
+}
+   
+
+
+
+
+

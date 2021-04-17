@@ -72,7 +72,9 @@ justify-content: center;
 
 div.MainImg img{
     
-width: 80%;
+/*width: 80%;*/
+width:180px;
+height: 100px;
 
 max-width: 300px;
     
@@ -196,6 +198,16 @@ div.footerElement ul li {
 
    }
 
+   div.MainImg img{
+    
+    /*width: 80%;*/
+    width:220px;
+    height: 140px;
+    
+    max-width: 300px;
+        
+    }
+
    article#mainContent{
        display: block;
        margin: 0 auto;
@@ -264,6 +276,16 @@ footer div.footerElement nav ul li{
         padding: 10px;
        
     }
+
+    div.MainImg img{
+    
+        /*width: 80%;*/
+        width: 300px;
+        height: 210px;
+        
+        max-width: 350px;
+            
+        }
 
     header {
         display: flex;
